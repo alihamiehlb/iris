@@ -5,7 +5,8 @@ import gunicorn
 
 
 # Load the trained model
-model = pickle.load(open("iris_model.pkl", "rb"))
+model = pickle.load(open("app/iris_model.pkl", "rb"))
+
 
 app = Flask(__name__)
 
